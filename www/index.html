@@ -2,10 +2,46 @@
 <head>
 <title>Helio Exchange</title>
 <style type="text/css">
-body { background-color: pink; }
+body { background-image: url('./background.jpg'); }
+.header-wrapper {
+width: 100%;
+text-align: center;
+line-height: 300px;
+}
+.header-wrapper > div {
+line-height: normal;
+vertical-align: middle;
+}
+.helio-logo,
+.at,
+.kc-image {
+display:inline-block;
+}
+.kc-image {
+height: 265px;
+width: 625px;
+}
+.at span {
+font-size: 150px;
+color: white;
+margin: 0 50px;
+}
+.content {
+color: white;
+}
 </style>
 </head>
 <body>
-Welcome to helio.exchange
+<div class="header-wrapper">
+<div class="helio-logo">
+<object data="./logo.svg" type="image/svg+xml"></object>
+</div>
+<div class="at">
+<span>@</span>
+</div>
+<div class="kc-image">
+<object data="./conf.svg" type="image/svg+xml"></object>
+</div>
+</div>
 </body>
 </html>
