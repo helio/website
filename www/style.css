@@ -39,7 +39,7 @@ body {
 /*********************************** hacks */
 section {
     /* make anchor jumps be positioned nicely */
-    padding-top: 150px;
+    padding-top: 200px;
 }
 
 
@@ -88,6 +88,9 @@ section {
     color: #45AFE3;
 }
 
+#contact {
+    min-height: 33%;
+}
 
 /*********************************** footer */
 footer {
