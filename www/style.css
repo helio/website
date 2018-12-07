@@ -1,0 +1,111 @@
+/* general */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+}
+
+.visuallyhidden {
+    border: 0!important;
+    clip: rect(0 0 0 0)!important;
+    height: 1px!important;
+    margin: -1px!important;
+    overflow: hidden!important;
+    padding: 0!important;
+    position: absolute!important;
+    width: 1px!important;
+}
+
+.smallcaps {
+    font-variant: small-caps;
+}
+
+.font-big {
+    font-size: 1.5em;
+}
+
+.gradient {
+    border-image: -webkit-gradient(linear, left top, right bottom, from(#F70078), to(#FFD15B));
+    border-image-slice: 20%;
+    border-image-repeat: stretch;
+    border-image-width: 2px;
+}
+
+
+/*********************************** hacks */
+section {
+    /* make anchor jumps be positioned nicely */
+    padding-top: 150px;
+}
+
+
+/*********************************** content */
+.header {
+    /* make content "hide" behind navbar */
+    width: 100%;
+    background: url('./background.jpg') no-repeat center center fixed;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.kc-image {
+    height: 265px;
+    width: 625px;
+}
+
+.nav-item {
+    font-weight: 600;
+    letter-spacing: 1.5;
+    font-size: 18px;
+}
+
+.nav-item .nav-link.active {
+    border-bottom: 4px solid #45AFE3;
+}
+
+.nl-subscribe {
+    margin-top: 15px;
+}
+.nl-subscribe input {
+    height: 55px;
+}
+.nl-subscribe input.email {
+    width: 300px;
+    margin-right: 20px;
+    padding: 0 10px;
+}
+.nl-subscribe input.subscribe {
+    width: 175px;
+    background-color: #212237;
+    border: 0;
+    border-radius: 12px;
+    color: #45AFE3;
+}
+
+
+/*********************************** footer */
+footer {
+    margin-top: 45px;
+    padding-bottom: 15px;
+}
+footer .helio-logo {
+    height: 30px;
+}
+footer .navbar {
+    margin-left: 0;
+    padding-left: 0;
+}
+footer nav .navbar-nav {
+    /* make icon nav horizontal */
+    flex-direction: row;
+}
+footer .copyright,
+footer .copyright a {
+    color: rgba(255,255,255,.5);
+}
