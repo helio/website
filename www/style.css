@@ -1,4 +1,4 @@
-/* general */
+/*********************************** general */
 html {
   scroll-behavior: smooth;
 }
@@ -7,6 +7,7 @@ body {
     color: #ffffff;
     text-align: center;
     position: relative;
+    padding-bottom: 200px;
 }
 
 .visuallyhidden {
@@ -88,14 +89,14 @@ section {
     color: #45AFE3;
 }
 
-#contact {
-    min-height: 33%;
-}
 
 /*********************************** footer */
 footer {
     margin-top: 45px;
     padding-bottom: 15px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 footer .helio-logo {
     height: 30px;
