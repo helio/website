@@ -10,6 +10,10 @@ body {
     padding-bottom: 200px;
 }
 
+a:link {
+    color: #45AFE3;
+}
+
 .visuallyhidden {
     border: 0!important;
     clip: rect(0 0 0 0)!important;
@@ -21,8 +25,33 @@ body {
     width: 1px!important;
 }
 
+.multicolumn {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 3em;
+    -moz-column-gap: 3em;
+    column-gap: 3em;
+}
+
+@media (max-width: 600px) {
+  .multicolumn {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-gap: 3em;
+    -moz-column-gap: 3em;
+    column-gap: 3em;
+  }
+}
+
 .smallcaps {
     font-variant: small-caps;
+}
+
+.font-biggish {
+    font-size: 1.2em;
+    font-weight: 500;
 }
 
 .font-big {
@@ -68,6 +97,10 @@ section {
 
 .nav-item .nav-link.active {
     border-bottom: 4px solid #45AFE3;
+}
+
+.text {
+    margin-bottom: 50px;
 }
 
 .nl-subscribe {

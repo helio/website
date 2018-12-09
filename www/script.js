@@ -14,6 +14,11 @@ $('.js-scroll-trigger').click(function() {
 	$('.navbar-collapse').collapse('hide');
 });
 
+window.setTimeout($(function() {
+ $('a[href^="mailto:"]').each(function() {
+  this.href += 'helio.exchange';
+ });
+}), 500);
 
 
 
