@@ -98,7 +98,10 @@ section {
 .nav-item .nav-link.active {
     border-bottom: 4px solid #45AFE3;
 }
-
+h3 {
+    text-transform: uppercase;
+    color: #FF8833;
+}
 .text {
     margin-bottom: 50px;
 }
