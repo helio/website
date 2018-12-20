@@ -102,6 +102,15 @@ h3 {
     text-transform: uppercase;
     color: #FF8833;
 }
+.pink {
+    color: #F70078;
+}
+.yellow {
+    color: #FFD15B;
+}
+.grey {
+    color: # #26292E;
+}
 .text {
     margin-bottom: 50px;
 }
