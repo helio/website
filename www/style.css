@@ -98,6 +98,9 @@ section {
 .nav-item .nav-link.active {
     border-bottom: 4px solid #45AFE3;
 }
+h2 {
+    text-transform: uppercase;
+}
 h2 strong {
     color: #FFD15B;
     font-weight: normal;
