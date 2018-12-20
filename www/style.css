@@ -11,7 +11,8 @@ body {
 }
 
 a:link {
-    color: #45AFE3;
+    color: #212237;
+    text-decoration: underline;   
 }
 
 .visuallyhidden {
@@ -97,6 +98,9 @@ section {
 
 .nav-item .nav-link.active {
     border-bottom: 4px solid #45AFE3;
+}
+.nav-item a:link {
+    text-decoration: none;
 }
 h2 {
     text-transform: uppercase;
