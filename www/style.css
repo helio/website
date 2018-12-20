@@ -102,6 +102,9 @@ section {
 .text {
     margin-bottom: 50px;
 }
+.left {
+    text-align: left;
+}
 
 .nl-subscribe {
     margin-top: 15px;
