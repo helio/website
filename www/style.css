@@ -14,7 +14,10 @@ a:link {
     color: #ffffff;
     text-decoration: underline;   
 }
-
+a:hover {
+    color: #FFD15B;
+    text-decoration: underline;   
+}
 .visuallyhidden {
     border: 0!important;
     clip: rect(0 0 0 0)!important;
