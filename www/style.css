@@ -98,7 +98,7 @@ section {
 .nav-item .nav-link.active {
     border-bottom: 4px solid #45AFE3;
 }
-h3 strong {
+h2 strong {
     color: #FFD15B;
     font-weight: normal;
 }
