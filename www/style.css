@@ -1,6 +1,6 @@
 /*********************************** general */
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -10,23 +10,63 @@ body {
     padding-bottom: 200px;
 }
 
+
+h2 {
+    text-transform: uppercase;
+}
+
+h3 {
+    text-transform: uppercase;
+    color: #FF8833;
+}
+
+.pink {
+    color: #F70078;
+}
+
+.yellow {
+    color: #FFD15B;
+}
+
+.grey {
+    color: #26292E;
+}
+
+.blue {
+    color: #45AFE3;
+}
+.bg-white {
+    background-color: rgb(240, 240, 240);
+}
+
+.text {
+    margin-bottom: 50px;
+}
+
+.left {
+    text-align: left;
+}
+
+
 a:link {
     color: #ffffff;
-    text-decoration: underline;   
+    text-decoration: underline;
 }
+
 a:hover {
     color: #FFD15B;
-    text-decoration: underline;   
+    text-decoration: underline;
 }
+
 .visuallyhidden {
-    border: 0!important;
-    clip: rect(0 0 0 0)!important;
-    height: 1px!important;
-    margin: -1px!important;
-    overflow: hidden!important;
-    padding: 0!important;
-    position: absolute!important;
-    width: 1px!important;
+    border: 0 !important;
+    clip: rect(0 0 0 0) !important;
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
 }
 
 .multicolumn {
@@ -38,15 +78,32 @@ a:hover {
     column-gap: 3em;
 }
 
+.half {
+    width: 50%;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+@media (min-width: 900px) {
+    body section .content {
+        margin: 0 auto;
+        width: 900px;
+    }
+}
 @media (max-width: 600px) {
-  .multicolumn {
-    -webkit-column-count: 1;
-    -moz-column-count: 1;
-    column-count: 1;
-    -webkit-column-gap: 3em;
-    -moz-column-gap: 3em;
-    column-gap: 3em;
-  }
+    .multicolumn {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        -webkit-column-gap: 3em;
+        -moz-column-gap: 3em;
+        column-gap: 3em;
+    }
+    .half {
+        width: 100%;
+    }
 }
 
 .smallcaps {
@@ -62,20 +119,23 @@ a:hover {
     font-size: 1.5em;
 }
 
-.gradient {
+.border-gradient {
     border-image: -webkit-gradient(linear, left top, right bottom, from(#F70078), to(#FFD15B));
     border-image-slice: 20%;
     border-image-repeat: stretch;
     border-image-width: 2px;
 }
-
+.text-gradient {
+    background: -webkit-linear-gradient(#F70078, #FFD15B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 /*********************************** hacks */
 section {
     /* make anchor jumps be positioned nicely */
     padding-top: 200px;
 }
-
 
 /*********************************** content */
 .header {
@@ -87,6 +147,7 @@ section {
     -o-background-size: cover;
     background-size: cover;
 }
+
 
 .kc-image {
     height: 265px;
@@ -102,68 +163,55 @@ section {
 .nav-item .nav-link.active {
     border-bottom: 4px solid #45AFE3;
 }
+
 .nav-item a:link {
     text-decoration: none;
 }
+
 .videoWrapper {
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
-	height: 0;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
 }
+
 .videoWrapper iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
-h2 {
-    text-transform: uppercase;
-}
+
 h2 strong {
-    color: #FFD15B;
     font-weight: normal;
-}
-h3 {
-    text-transform: uppercase;
-    color: #FF8833;
-}
-.pink {
-    color: #F70078;
-}
-.yellow {
-    color: #FFD15B;
-}
-.grey {
-    color: # #26292E;
-}
-.text {
-    margin-bottom: 50px;
-}
-.left {
-    text-align: left;
 }
 
 .nl-subscribe {
     margin-top: 15px;
 }
+
 .nl-subscribe input {
     height: 55px;
 }
+
 .nl-subscribe input.email {
     width: 300px;
     margin-right: 20px;
     padding: 0 10px;
 }
+
 .nl-subscribe input.subscribe {
     width: 175px;
     background-color: #212237;
     border: 0;
     border-radius: 12px;
-    color: #45AFE3;
 }
 
+#lead h1 {
+    font-weight: 400;
+    font-size: 4em;
+}
 
 /*********************************** footer */
 footer {
@@ -173,18 +221,22 @@ footer {
     position: absolute;
     bottom: 0;
 }
+
 footer .helio-logo {
     height: 30px;
 }
+
 footer .navbar {
     margin-left: 0;
     padding-left: 0;
 }
+
 footer nav .navbar-nav {
     /* make icon nav horizontal */
     flex-direction: row;
 }
+
 footer .copyright,
 footer .copyright a {
-    color: rgba(255,255,255,.5);
+    color: rgba(255, 255, 255, .5);
 }
