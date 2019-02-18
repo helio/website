@@ -1,16 +1,14 @@
-$('.nl-subscribe').submit(function(e){
+$('form.helio-subscribe').submit(function(e){
     e.preventDefault();
+    let form = $(this);
     $.ajax({
         url:'https://hooks.zapier.com/hooks/catch/3301335/cf3e5r/',
         type:'post',
-        data:{email: $(e.target).find('input[type=email]')},
+        data:{email: $(form.find('input[type=email]')[0]).val()},
         success:function(){
-          $('#nl-subscribe').html(
+          form.html(
               '<div class="alert-success alert-dismissible fade show" role="alert">\n' +
-              '<button type="button" class="close" data-dismiss="alert" aria-label="Close">\n' +
-              '<span aria-hidden="true">×</span>\n' +
-              '</button>' +
-              '<strong>Success!</strong>' +
+              '<strong>Success!</strong> You will receive a confirmation shortly.' +
               '</div>'
           );
         }

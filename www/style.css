@@ -3,14 +3,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    text-align: center;
-    position: relative;
-}
-.left {
-    text-align: left;
-}
-
 .font-biggish {
     font-size: 1.2em;
 }
@@ -99,7 +91,9 @@ a:hover {
 
 /*********************************** content */
 .helio .header-hero {
-    min-height: 100vh;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 700px;
 }
 
 .helio header .header-text {

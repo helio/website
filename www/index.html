@@ -36,7 +36,7 @@
     })(window, document, 'script', 'dataLayer', 'GTM-TVG38CP');</script>
     <!-- End Google Tag Manager -->
 </head>
-<body class="loading" data-spy="scroll" data-target=".navbar">
+<body class="loading text-center position-relative" data-spy="scroll" data-target=".navbar">
 <!-- Google Tag Manager (noscript) -->
 <noscript>
     <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TVG38CP"
@@ -87,7 +87,7 @@
     <div class="container">
         <div class="row text-center">
             <div class="col-12 fadeInScaleDown">
-                <div class="d-inline-block left">
+                <div class="d-inline-block text-right">
                     <h1 class="header-text">
                         <span class="font-big text-gradient">Helio</span>
                         <br/>
@@ -101,9 +101,9 @@
             <div class="col-12">
                 <span class="font-big">
                     <span class="text-small-caps">Stay in touch to get the latest development updates on </span> Helio.</span>
-                <form class="ml-auto nl-subscribe" id="nl-subscribe" name="nl-subscribe" style="margin-top: 5px;">
-                    <label for="email" class="text-hide">Your E-Mail Address.</label>
-                    <input type="email" value="" name="email" class="email border-gradient font-biggish" id="email"
+                <form class="helio-subscribe" style="margin-top: 5px;">
+                    <label for="header-email" class="text-hide">Your E-Mail Address.</label>
+                    <input type="email" class="email border-gradient font-biggish" id="header-email"
                            style="height: 48px; margin-right: 25px; width: 333px;"
                            placeholder="email address"
                            required>
@@ -141,13 +141,12 @@
                     are!
                     <br/>
                     Sign up below to stay in touch and be the first to receive an invite when we'll launch our
-                    invite-only beta in January 2019.
+                    invite-only beta in Q1 2019.
                 </p>
             </div>
             <div class="col-md-6">
                 <h3 class="text-uppercase grey">
                     Sustainable Data Centers
-                    <span class="badge-new">New</span>
                 </h3>
                 <p>
                     Distribute cloud computing workloads to idle, high performance computing containers. Produce
@@ -211,16 +210,34 @@
             <h2 class="text-small-caps">At the Forefront of Innovation</h2>
             <div class="row">
                 <div class="col-4">
+                    <br/>
                     <img src="images/christoph.jpg" alt="picture of Christoph" width="200px;"/>
+                    <br/>
+                    <br/>
                     <h3 class="text-small-caps">Christoph</h3>
-                    <a href="https://www.linkedin.com/in/chbuchli/" class="" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    <p>
+                        Software Engineer
+                    </p>
+                    <p>
+                        <a href="https://www.linkedin.com/in/chbuchli/" class="" target="_blank"><i
+                                class="fa fa-linkedin"></i></a>
+                    </p>
                 </div>
                 <div class="col-4">
+                    <br/>
                     <img src="images/kevin.png" alt="picture of Kevin" width="200px;"/>
+                    <br/>
+                    <br/>
                     <h3 class="text-small-caps">Kevin</h3>
-                    <a href="https://www.linkedin.com/in/kevinhaefeli/" class="" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    <p>
+                        DevOps Engineer
+                    </p>
+                    <p>
+                        <a href="https://www.linkedin.com/in/kevinhaefeli/" class="" target="_blank"><i
+                                class="fa fa-linkedin"></i></a>
+                    </p>
                 </div>
-                <div class="col-4 left">
+                <div class="col-4 text-left">
                     <h3 class="text-small-caps">Who are we?</h3>
                     <p>We are a small, ambitious and fast-growing, forward-thinking company with computing on our
                         minds.</p>
@@ -232,15 +249,6 @@
                         way!</a></p>
                 </div>
             </div>
-            <hr/>
-            <div class="row">
-                <div class="col-12">
-                    <p class="font-biggish text">You're always welcome contact us directly at
-                        <br/>
-                        <a href="mailto:team@">team@helio.exchange</a>
-                        or on <a href="https://twitter.com/helioexchange">Twitter</a>.</p>
-                </div>
-            </div>
         </div>
     </section>
 </div>
@@ -248,11 +256,11 @@
 <footer class="footer">
     <div class="container">
         <div class="row">
-            <div class="col-md-4 left">
+            <div class="col-md-4 text-left">
                 <div class="copyright">© 2019 <a href="https://helio.exchange">Helio AG</a>
                 </div>
             </div>
-            <div class="col-md-4 left">
+            <div class="col-md-4 text-left">
                 <div class="title">
                     Connect with us
                 </div>
@@ -287,9 +295,15 @@
                             LinkedIn
                         </a>
                     </li>
+                    <li>
+                        <a href="mailto:team@">
+                            <i class="fa fa-envelope"></i>
+                            team@helio.exchange
+                        </a>
+                    </li>
                 </ul>
             </div>
-            <div class="col-md-4 newsletter left">
+            <div class="col-md-4 newsletter text-left">
                 <div class="title">
                     Get awesome updates
                 </div>
@@ -297,13 +311,13 @@
                     Enter your email address for news and product launches.
                 </p>
 
-                <form class="newsletter-form nl-subscribe" autocomplete="off">
-                    <input type="email" id="mc-email" class="form-control" placeholder="Email address" required/>
+                <form class="helio-subscribe" autocomplete="off">
+                    <input type="email" id="footer-email" class="form-control" placeholder="Email address" required/>
 
                     <button type="submit">
                         <i class="fa fa-chevron-right"></i>
                     </button>
-                    <label for="mc-email" class="text-white newsletter-feedback mt-3"></label>
+                    <label for="footer-email" class="text-white newsletter-feedback mt-3"></label>
                 </form>
             </div>
         </div>
