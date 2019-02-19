@@ -6,9 +6,11 @@ html {
 .font-biggish {
     font-size: 1.2em;
 }
+
 .font-big {
     font-size: 1.5em;
 }
+
 .text-small-caps {
     font-variant: small-caps;
 }
@@ -16,25 +18,32 @@ html {
 .orange {
     color: #FF8833;
 }
+
 .pink {
     color: #F70078;
 }
+
 .yellow {
     color: #FFD15B;
 }
+
 .grey {
     color: #26292E;
 }
+
 .blue {
     color: #45AFE3;
 }
+
 .bg-white {
     background-color: rgb(240, 240, 240);
 }
+
 .bg-dark-blue {
     background-color: rgb(40, 83, 106);
 }
-.white, header, footer, .bg-stars, .bg-dark-blue, .bg-dark, a:link  {
+
+.white, header, footer, .bg-stars, .bg-dark-blue, .bg-dark, a:link {
     color: #ffffff;
 }
 
@@ -60,6 +69,7 @@ html {
     color: #ffffff;
     background: -webkit-linear-gradient(0.5turn, #F70078, #FF8833);
 }
+
 .btn-helio-dark {
     padding: 10px 45px;
     -webkit-border-radius: 10px;
@@ -81,25 +91,44 @@ a:hover {
     padding: 50px 0;
     height: 100%;
 }
+
 .helio footer {
     margin-top: 0;
 }
+
 .helio .newsletter-form {
     margin-top: 60px;
-    padding-bottom: 20px;
+    padding-bottom: 60px;
+}
+
+.helio #contact img {
+    width: 100%;
+    max-width: 200px;
+}
+
+/*********************************** responsive hacks */
+@media (max-width: 768px) {
+
+    .helio #about .col-md-6 {
+        padding-bottom: 20px;
+    }
+
+    .helio #about {
+        padding-bottom: 0;
+    }
+    .helio #about > hr {
+        display: none;
+    }
 }
 
 /*********************************** content */
-.helio .header-hero {
-    height: 100vh;
-    min-height: 600px;
-    max-height: 700px;
-}
 
 .helio header .header-text {
     font-size: 48px;
     font-weight: 400;
 }
+
 .helio .bg-stars {
     background-image: url('./images/background.jpg');
 }
+
