@@ -1,134 +1,122 @@
-/*********************************** general */
-html {
-    scroll-behavior: smooth;
+/* Style the video: 100% width and height to cover the entire window */
+.video {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.font-biggish {
-    font-size: 1.2em;
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
 }
 
-.font-big {
-    font-size: 1.5em;
+.blend-in {
+    opacity: 1;
+    transition: opacity .8s ease-in-out 9s;
 }
 
-.text-small-caps {
-    font-variant: small-caps;
+.loading .blend-in {
+    opacity: 0;
 }
 
-.orange {
-    color: #FF8833;
+#video-narrow,
+#control-narrow {
+    display: none;
 }
 
-.pink {
-    color: #F70078;
+@media (max-aspect-ratio: 1/1) {
+
+    #video-wide,
+    #control-wide {
+        display: none;
+    }
+
+    #video-narrow,
+    #control-narrow {
+        display: initial;
+    }
 }
 
-.yellow {
-    color: #FFD15B;
+header {
+    height: 100px;
+    width: 98vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 1vw;
+    background: url('images/logo.svg') top right no-repeat;
+    background-size: contain;
+    z-index: 1000;
 }
 
-.grey {
-    color: #26292E;
+/* Add some content at the bottom of the video/page */
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
 }
 
-.blue {
-    color: #45AFE3;
+@font-face {
+    font-family: "Bebas Neue";
+    src: url(./fonts/BebasNeueRegular.otf);
 }
 
-.bg-white {
-    background-color: rgb(240, 240, 240);
+@font-face {
+    font-family: "Hoop Demo";
+    src: url(./fonts/Hoop_Regular_Demo.otf);
 }
 
-.bg-dark-blue {
-    background-color: rgb(40, 83, 106);
+.title {
+    position: fixed;
+    width: 96vw;
+    padding: 10px 2vw;
+    color: white;
+    text-align: center;
+    top: 150px;
+    background: rgba(0, 0, 0, 0.5);
+    font-family: "Bebas Neue", "Arial", sans-serif;
+}
+h1 {
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+h2 {
+    letter-spacing: 3px;
 }
 
-.white, header, footer, .bg-stars, .bg-dark-blue, .bg-dark, a:link {
-    color: #ffffff;
-}
-
-.border-gradient {
-    border-image: -webkit-gradient(linear, left top, right bottom, from(#F70078), to(#FFD15B));
-    border-image-slice: 20%;
-    border-image-repeat: stretch;
-    border-image-width: 2px;
-}
-
-.text-gradient {
-    background: -webkit-linear-gradient(#F70078, #FFD15B);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.btn-helio-orange {
-    padding: 10px 45px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    border-radius: 30px;
+/* Style the button used to pause/play the video */
+.control {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
     border: none;
-    color: #ffffff;
-    background: -webkit-linear-gradient(0.5turn, #F70078, #FF8833);
+    background: #000;
+    color: #fff;
+    cursor: pointer;
 }
 
-.btn-helio-dark {
-    padding: 10px 45px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    border: none;
-    color: #ffffff;
-    background: #26292E;
+.control:hover {
+    background: #ddd;
+    color: black;
+}
+form.helio-subscribe {
+    margin: 5px 0;
 }
 
+
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
 a:hover {
     opacity: 0.8;
     text-decoration: none;
 }
-
-/*********************************** hacks */
-.helio section {
-    /* make anchor jumps be positioned nicely */
-    padding: 50px 0;
-    height: 100%;
-}
-
-.helio footer {
-    margin-top: 0;
-}
-
-.helio .newsletter-form {
-    margin-top: 60px;
-    padding-bottom: 60px;
-}
-
-.helio #contact img {
-    width: 100%;
-    max-width: 200px;
-}
-
-/*********************************** responsive hacks */
-@media (max-width: 768px) {
-
-    .helio #about .col-md-6 {
-        padding-bottom: 20px;
-    }
-
-    .helio #about {
-        padding-bottom: 0;
-    }
-    .helio #about > hr {
-        display: none;
-    }
-}
-
-/*********************************** content */
-
-.helio header .header-text {
-    font-size: 48px;
-    font-weight: 400;
-}
-
-.helio .bg-stars {
-    background-image: url('./images/background.jpg');
-}
-

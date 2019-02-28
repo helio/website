@@ -9,16 +9,12 @@
                                       Shouldn't we be utilizing this free computing capacity?">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
     <link rel="shortcut icon" href="/favicon.ico">
 
-    <!-- stylesheets -->
-    <link rel="stylesheet" type="text/css" href="dist/theme.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
-    <!-- javascript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <script src="dist/theme.min.js"></script>
 
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
@@ -28,7 +24,7 @@
                 new Date().getTime(), event: 'gtm.js'
         });
         var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j = d.createElement(s), dl = l !== 'dataLayer' ? '&l=' + l : '';
         j.async = true;
         j.src =
             'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
@@ -36,299 +32,31 @@
     })(window, document, 'script', 'dataLayer', 'GTM-TVG38CP');</script>
     <!-- End Google Tag Manager -->
 </head>
-<body class="loading text-center position-relative" data-spy="scroll" data-target=".navbar">
-<!-- Google Tag Manager (noscript) -->
-<noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TVG38CP"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
-<!-- End Google Tag Manager (noscript) -->
-<!--[if lt IE 9]>
-<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
+<body class="loading">
 
-<!--[if lt IE 8]>
-<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
-    your browser</a> to improve your experience.</p>
-<![endif]-->
+<header class="blend-in"></header>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top" role="navigation">
-    <div class="container no-override">
-        <a class="navbar-brand" href="index.html">
-            <img src="images/logo.png" class="d-none d-lg-inline mr-2 w-50"/>
-        </a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<!-- The video -->
+<video autoplay muted loop id="video-wide" class="video">
+    <source src="./video-wide.mov" type="video/mp4">
+</video>
 
-        <div class="collapse navbar-collapse justify-content-end" id="navbar-collapse">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="text-small-caps nav-link" href="#about">
-                        About Helio
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="text-small-caps nav-link" href="#vision">
-                        Our Vision
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="text-small-caps nav-link" href="#contact">
-                        Contact
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
+<video autoplay muted loop id="video-narrow" class="video">
+    <source src="./video-narrow.mov" type="video/mp4">
+</video>
 
-<header class="header-hero bg-stars">
-    <div class="container">
-        <div class="row text-center">
-            <div class="col-12 fadeInScaleDown">
-                <div class="d-inline-block text-right">
-                    <h1 class="header-text">
-                        <span class="font-big text-gradient">Helio</span>
-                        <br/>
-                        <span class="font-biggish subheader text-small-caps">The dawn of sustainable computing</span>
-                    </h1>
-                </div>
-            </div>
-        </div>
-
-        <div class="row newsletter-form">
-            <div class="col-12">
-                <span class="font-big">
-                    <span class="text-small-caps">Stay in touch to get the latest development updates on </span> Helio.</span>
-                <form class="helio-subscribe" style="margin-top: 5px;">
-                    <label for="header-email" class="text-hide">Your E-Mail Address.</label>
-                    <input type="email" class="email border-gradient font-biggish" id="header-email"
-                           style="height: 48px; margin-right: 25px; width: 333px;"
-                           placeholder="email address"
-                           required>
-                    <input type="submit" value="Subscribe" name="subscribe" id="subscribe"
-                           style="vertical-align: initial;"
-                           class="btn btn-helio-dark text-small-caps text-weight-heavy font-biggish">
-                </form>
-            </div>
-        </div>
-    </div>
-</header>
-
-<div>
-    <section class="container" id="about">
-        <div class="row">
-            <div class="col-12">
-                <div class="header">
-                    <h2>
-                        About Helio
-                    </h2>
-                    <p>
-                        The autonomous cloud computing exchange.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <h3 class="text-uppercase pink">
-                    Utilize idling computing
-                </h3>
-                <p>
-                    Today 86% of servers are running idle. Why not put all this computing capacity to work, making
-                    it accessible for Open Source, Research, HPC and Artificial Intelligence innovators? Well, we
-                    are!
-                    <br/>
-                    Sign up below to stay in touch and be the first to receive an invite when we'll launch our
-                    invite-only beta in Q1 2019.
-                </p>
-            </div>
-            <div class="col-md-6">
-                <h3 class="text-uppercase grey">
-                    Sustainable Data Centers
-                </h3>
-                <p>
-                    Distribute cloud computing workloads to idle, high performance computing containers. Produce
-                    carbon neutral heat out of the computing and heat up nearby districts. Sounds awesome? It is! Do
-                    you want to learn more about it? Get in touch with us
-                </p>
-            </div>
-        </div>
-        <hr/>
-        <div class="row">
-            <div class="col-md-6">
-                <h3 class="text-uppercase blue">
-                    Get computing power
-                </h3>
-                <p>
-                    Our vendorless computing network allows for jobs of any size and complexity to be done at the
-                    most affordable prizes.
-                    <br/>
-                    We offer free compute for OpenSource, NGO and Education projects.
-                </p>
-                <a class="btn btn-helio-orange text-small-caps text-weight-heavy font-biggish"
-                   href="https://opencomputing.cloud/"
-                   target="_blank">Buy</a>
-            </div>
-            <div class="col-md-6">
-                <h3 class="text-uppercase orange">
-                    Sell computing power
-                </h3>
-                <p>
-                    Selling your computing resources has never been easier thanks to our AI-based workload management
-                    and advanced security features.
-                    <br/>
-                    No matter what kind of hardware you have, we'd love hearing about it!
-                </p>
-                <a class="btn btn-helio-orange text-small-caps text-weight-heavy font-biggish"
-                   href="https://idling.host/"
-                   target="_blank">Sell</a>
-            </div>
-        </div>
-    </section>
+<div class="title blend-in">
+    <h1>The next big step of Cloud</h1>
+    <h2>Expect the autonomous computing exchange</h2>
 </div>
-
-<div class="bg-stars">
-    <section id="vision">
-        <div class="container">
-            <h2 class="text-small-caps">Our Vision</h2>
-            <p>
-                Today's computing infrastructure is built for peak scenarios (like black friday sales), and then left
-                idling most of the time. The Industry's average utilization rate is estimated at 14%. On the other hand,
-                a lot of exciting new tools and companies depend heavily on high performance computing to solve
-                tomorrow's problems, but they can't access these idle resources and the Cloud is still way too expensive
-                at scale.
-            </p>
-        </div>
-    </section>
+<div class="content">
+    <button id="control-wide" class="control" onclick="wideMute()"><i class="fas fa-volume-up"></i> Unmute</button>
+    <button id="control-narrow" class="control" onclick="narrowMute()"><i class="fas fa-volume-up"></i> Unmute</button>
+    <form class="helio-subscribe">
+        <label for="email">Stay tuned! Contact us <a href="mailto:team@">via email</a> or sign up for the newsletter</label>
+        <input type="email" id="email" aria-label="Your Email Address" placeholder="email@example.com">
+    </form>
 </div>
-
-<div class="bg-dark-blue">
-    <section id="contact">
-        <div class="container">
-            <h2 class="text-small-caps">At the Forefront of Innovation</h2>
-            <div class="row">
-                <div class="col-lg-4">
-                    <br/>
-                    <img src="images/christoph.jpg" alt="picture of Christoph"/>
-                    <br/>
-                    <br/>
-                    <h3 class="text-small-caps">Christoph</h3>
-                    <p>
-                        Software Engineer
-                    </p>
-                    <p>
-                        <a href="https://www.linkedin.com/in/chbuchli/" class="" target="_blank"><i
-                                class="fa fa-linkedin"></i></a>
-                    </p>
-                </div>
-                <div class="col-lg-4">
-                    <br/>
-                    <img src="images/kevin.png" alt="picture of Kevin"/>
-                    <br/>
-                    <br/>
-                    <h3 class="text-small-caps">Kevin</h3>
-                    <p>
-                        DevOps Engineer
-                    </p>
-                    <p>
-                        <a href="https://www.linkedin.com/in/kevinhaefeli/" class="" target="_blank"><i
-                                class="fa fa-linkedin"></i></a>
-                    </p>
-                </div>
-                <div class="col-lg-4 text-left">
-                    <h3 class="text-small-caps">Who are we?</h3>
-                    <p>We are a small, ambitious and fast-growing, forward-thinking company with computing on our
-                        minds.</p>
-                    <h3 class="text-small-caps">What are we doing?</h3>
-                    <p>We overtake the elephants by our unique learning cycles and building the right product for the
-                        right market.</p>
-                    <h3 class="text-small-caps">We are hiring!</h3>
-                    <p>Awesome! <a href="mailto:team@">Drop us a note if you think you'd fit the team in any role or
-                        way!</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
-</div>
-
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 text-left">
-                <div class="copyright">© 2019 <a href="https://helio.exchange">Helio AG</a>
-                </div>
-            </div>
-            <div class="col-md-4 text-left">
-                <div class="title">
-                    Connect with us
-                </div>
-                <ul class="menu">
-                    <li>
-                        <a target="_blank" href="https://slack.opencomputing.cloud/">
-                            <i class="fa fa-slack"></i>
-                            Slack
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://twitter.com/helioexchange">
-                            <i class="fa fa-twitter"></i>
-                            Twitter
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://t.me/helioag">
-                            <i class="fa fa-telegram"></i>
-                            Telegram
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://github.com/helio">
-                            <i class="fa fa-github"></i>
-                            Github
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://www.linkedin.com/company/helioag">
-                            <i class="fa fa-linkedin"></i>
-                            LinkedIn
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:team@">
-                            <i class="fa fa-envelope"></i>
-                            team@helio.exchange
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-4 newsletter text-left">
-                <div class="title">
-                    Get awesome updates
-                </div>
-                <p>
-                    Enter your email address for news and product launches.
-                </p>
-
-                <form class="helio-subscribe" autocomplete="off">
-                    <input type="email" id="footer-email" class="form-control" placeholder="Email address" required/>
-
-                    <button type="submit">
-                        <i class="fa fa-chevron-right"></i>
-                    </button>
-                    <label for="footer-email" class="text-white newsletter-feedback mt-3"></label>
-                </form>
-            </div>
-        </div>
-        <div class="bottom">
-            Helio AG<br/>
-            c/o The Hub Z&uuml;rich Association<br/>
-            Sihlquai 131<br/>
-            CH-8005 Z&uuml;rich
-        </div>
-    </div>
-</footer>
 
 <!-- site asstes -->
 <link rel="stylesheet" type="text/css" href="./style.css"/>
