@@ -58,8 +58,8 @@ header {
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
-    width: 100%;
-    padding: 20px;
+    width: calc(100vw - 100px);
+    padding: 20px 80px 20px 20px;
 }
 
 @font-face {
@@ -82,11 +82,13 @@ header {
     background: rgba(0, 0, 0, 0.5);
     font-family: "Bebas Neue", "Arial", sans-serif;
 }
+
 h1 {
     font-size: 48px;
     font-weight: 600;
     letter-spacing: 5px;
 }
+
 h2 {
     letter-spacing: 3px;
 }
@@ -106,16 +108,21 @@ h2 {
     background: #ddd;
     color: black;
 }
+
 form.helio-subscribe {
-    margin: 5px 0;
+    margin: 15px 0 0 0;
 }
 
-
+form.helio-subscribe input {
+    background: transparent;
+    border: none;
+}
 
 a:link {
     color: white;
     text-decoration: none;
 }
+
 a:hover {
     opacity: 0.8;
     text-decoration: none;
