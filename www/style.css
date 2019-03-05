@@ -41,12 +41,12 @@ body {
 }
 
 header {
-    height: 100px;
-    width: 98vw;
+    height: 75px;
+    width: 96vw;
     position: absolute;
     top: 0;
     left: 0;
-    margin: 1vw;
+    margin: 2vw;
     background: url('images/logo.svg') top right no-repeat;
     background-size: contain;
     z-index: 1000;
@@ -115,7 +115,8 @@ form.helio-subscribe {
 
 form.helio-subscribe input {
     background: transparent;
-    border: none;
+    border: white solid 1px;
+    margin-left: 1em;
 }
 
 a:link {
