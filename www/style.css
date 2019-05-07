@@ -12,7 +12,9 @@
 body {
     margin: 0;
     font-family: "Arial", sans-serif;
-    min-height: calc( 666px + 75px);
+    min-height: calc(666px + 75px);
+    background: url('images/background.png');
+    background-size: cover;
 }
 
 body > div {
@@ -21,7 +23,7 @@ body > div {
 
 .blend-in {
     opacity: 1;
-    transition: opacity 1.5s ease-in-out 9s;
+    transition: opacity 1.5s ease-in-out 4s;
 }
 
 .loading .blend-in {
@@ -31,26 +33,6 @@ body > div {
 #video-narrow,
 #control-narrow {
     display: none;
-}
-
-@media (max-aspect-ratio: 1/1) {
-
-    #video-wide,
-    #control-wide {
-        display: none;
-    }
-
-    #video-narrow,
-    #control-narrow {
-        display: initial;
-    }
-}
-
-@media (min-width: 800px) {
-    .content-video {
-        min-width: 800px;
-        max-width: calc( ( 100vh - 250px ) * 4 / 3);
-    }
 }
 
 header {
@@ -75,6 +57,10 @@ header {
     padding: 20px 80px 20px 20px;
 }
 
+#footer {
+    display: none;
+}
+
 @font-face {
     font-family: "Bebas Neue";
     src: url(./fonts/BebasNeueRegular.otf);
@@ -92,17 +78,18 @@ header {
     text-align: center;
     margin-top: 160px;
     background: rgba(0, 0, 0, 0.5);
-    font-family: "Bebas Neue", "Arial", sans-serif;
 }
 
 h1 {
     font-size: 48px;
     font-weight: 600;
     letter-spacing: 5px;
+    font-family: "Bebas Neue", "Arial", sans-serif;
 }
 
 h2 {
     letter-spacing: 3px;
+    font-family: "Bebas Neue", "Arial", sans-serif;
 }
 
 /* Style the button used to pause/play the video */
@@ -122,21 +109,79 @@ h2 {
 }
 
 form.helio-subscribe {
-    margin: 15px 0 0 0;
+    margin: 15px 0;
+    max-width: 800px;
+}
+
+form.helio-subscribe button,
+form.helio-subscribe input {
+    background: transparent;
+    border: white solid 2px;
 }
 
 form.helio-subscribe input {
-    background: transparent;
-    border: white solid 1px;
-    margin-left: 1em;
+    width: 75%;
+    height: 40px;
+    padding: .375rem .75rem;
+    margin-bottom: 8px;
+    color: white;
+}
+form.helio-subscribe input:focus {
+    outline: 0;
+}
+form.helio-subscribe input::placeholder {
+    color: white;
+}
+
+form.helio-subscribe button {
+    width: calc(25% + .25rem);
+    min-width: 180px;
+    margin-left: -.25rem;
+    background-color: white;
+    color: black;
+
 }
 
 a:link {
     color: white;
     text-decoration: none;
+    opacity: 0.9;
 }
 
 a:hover {
-    opacity: 0.8;
+    opacity: 0.7;
     text-decoration: none;
+}
+
+
+
+
+
+@media (max-aspect-ratio: 1/1) {
+
+    #video-wide,
+    #control-wide {
+        display: none;
+    }
+
+    #video-narrow,
+    #control-narrow {
+        display: initial;
+    }
+}
+
+@media (min-width: 800px) {
+    .content-video {
+        min-width: 800px;
+        max-width: calc((100vh - 250px) * 4 / 3);
+    }
+}
+
+@media (max-width: 733px) {
+    form.helio-subscribe button,
+    form.helio-subscribe input {
+        width: 100%;
+        margin-left: 0;
+        display: block;
+    }
 }

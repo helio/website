@@ -11,8 +11,10 @@
 
     <link rel="shortcut icon" href="/favicon.ico">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
@@ -47,22 +49,30 @@
 </video>
 
 <div class="title blend-in">
-    <h1>The next big step of Cloud</h1>
-    <h2>Expect the autonomous computing exchange</h2>
+    <div style="width: 100%;">
+        <h1>The next big step of Cloud</h1>
+        <h2>Expect the autonomous computing exchange</h2>
+        <form class="helio-subscribe form-inline mx-auto">
+            <label class="sr-only" for="email">Sign up for our Newsletter with your Email Address</label>
+            <input type="email" id="email" aria-label="Sign up for our Newsletter with your Email Address"
+                   placeholder="enter your email address">
+            <button type="submit" class="btn btn-secondary mb-2">subscribe for updates</button>
+        </form>
+    </div>
     <div style="width: 100%;">
         <div class="content-video" style="margin: 0 auto;">
-            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/330772125?color=FF8833&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+            <div style="padding:56.25% 0 0 0;position:relative;">
+                <iframe src="https://player.vimeo.com/video/330772125?color=FF8833&byline=0&portrait=0"
+                        style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+                        allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
         </div>
     </div>
 </div>
-<div class="content">
+<div class="content" id="footer">
     <button id="control-wide" class="control" onclick="wideMute()"><i class="fas fa-volume-up"></i> Unmute</button>
     <button id="control-narrow" class="control" onclick="narrowMute()"><i class="fas fa-volume-up"></i> Unmute</button>
-    <form class="helio-subscribe">
-        <label for="email">Stay tuned! Contact us <a href="mailto:team@">via email</a> or sign up for the newsletter:</label>
-        <input type="email" id="email" aria-label="Your Email Address" placeholder="email@example.com">
-        <button type="submit" class="btn btn-secondary">submit</button>
-    </form>
 </div>
 
 <!-- site asstes -->
