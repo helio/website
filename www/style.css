@@ -112,6 +112,9 @@ form.helio-subscribe {
     margin: 15px 0;
     max-width: 800px;
 }
+form.helio-subscribe .alert-success {
+    width: 100%;
+}
 
 form.helio-subscribe button,
 form.helio-subscribe input {
