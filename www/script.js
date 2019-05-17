@@ -36,6 +36,10 @@ let videoW = document.getElementById("video-wide");
 let btnW = document.getElementById("control-wide");
 
 function narrowMute() {
+    if(!videoW || !videoN || !btnW || !btnN) {
+        return;
+    }
+
     videoW.muted = true;
     if (videoN.muted) {
         videoN.muted = false;
@@ -48,6 +52,10 @@ function narrowMute() {
 
 
 function wideMute() {
+    if(!videoW || !videoN || !btnW || !btnN) {
+        return;
+    }
+
     videoN.muted = true;
     if (videoW.muted) {
         videoW.muted = false;
