@@ -1,66 +1,3 @@
-/* Style the video: 100% width and height to cover the entire window */
-.video {
-    position: fixed;
-    min-width: 100%;
-    min-height: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-}
-
-body {
-    margin: 0;
-    font-family: "Arial", sans-serif;
-    min-height: calc(666px + 75px);
-    background: url('images/background.png');
-    background-size: cover;
-}
-
-body > div {
-    box-sizing: content-box;
-}
-
-.blend-in {
-    opacity: 1;
-    transition: opacity 1.5s ease-in-out 4s;
-}
-
-.loading .blend-in {
-    opacity: 0;
-}
-
-#video-narrow,
-#control-narrow {
-    display: none;
-}
-
-header {
-    height: 75px;
-    width: 96vw;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 2vw;
-    background: url('images/logo.svg') top right no-repeat;
-    background-size: contain;
-    z-index: 1000;
-}
-
-/* Add some content at the bottom of the video/page */
-.content {
-    position: fixed;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
-    width: calc(100vw - 100px);
-    padding: 20px 80px 20px 20px;
-}
-
-#footer {
-    display: none;
-}
-
 @font-face {
     font-family: "Bebas Neue";
     src: url(./fonts/BebasNeueRegular.otf);
@@ -70,6 +7,41 @@ header {
     font-family: "Hoop Demo";
     src: url(./fonts/Hoop_Regular_Demo.otf);
 }
+
+body {
+    font-family: "Arial", sans-serif;
+    /*
+    background-color: RGB(249 244 222);
+     */
+}
+
+header {
+    height: 150px;
+    width: 100%;
+    min-width: 360px;
+    top: 0;
+    left: 0;
+    margin: 10vh 0;
+    background: url('images/logo.svg') center center no-repeat;
+    background-size: contain;
+    z-index: 1000;
+}
+
+
+.content {
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    min-width: 360px;
+}
+
 
 .title {
     width: 96vw;
@@ -92,57 +64,45 @@ h2 {
     font-family: "Bebas Neue", "Arial", sans-serif;
 }
 
-/* Style the button used to pause/play the video */
-.control {
-    width: 200px;
-    font-size: 18px;
-    padding: 10px;
-    border: none;
-    background: #000;
-    color: #fff;
-    cursor: pointer;
+
+
+form.helio-subscribe .alert-success,
+form.helio-subscribe button,
+form.helio-subscribe input {
+    height: 40px;
+    padding: 0 .75rem;
+    margin-bottom: 8px;
+    display: inline;
 }
 
-.control:hover {
-    background: #ddd;
-    color: black;
-}
-
-form.helio-subscribe {
-    margin: 15px 0;
-    max-width: 800px;
-}
 form.helio-subscribe .alert-success {
+    padding-top: 0.5em;
     width: 100%;
 }
 
-form.helio-subscribe button,
 form.helio-subscribe input {
-    background: transparent;
     border: white solid 2px;
+    text-align: right;
+    min-width: 180px;
+    background: transparent;
+    width: calc(100% - 200px)
 }
 
-form.helio-subscribe input {
-    width: 75%;
-    height: 40px;
-    padding: .375rem .75rem;
-    margin-bottom: 8px;
-    color: white;
-}
 form.helio-subscribe input:focus {
     outline: 0;
 }
+
 form.helio-subscribe input::placeholder {
     color: white;
 }
 
 form.helio-subscribe button {
-    width: calc(25% + .25rem);
-    min-width: 180px;
-    margin-left: -.25rem;
+    text-align: left;
+    width: 200px;
     background-color: white;
     color: black;
-
+    border: white solid 2px;
+    border-radius: 0;
 }
 
 a:link {
@@ -154,37 +114,4 @@ a:link {
 a:hover {
     opacity: 0.7;
     text-decoration: none;
-}
-
-
-
-
-
-@media (max-aspect-ratio: 1/1) {
-
-    #video-wide,
-    #control-wide {
-        display: none;
-    }
-
-    #video-narrow,
-    #control-narrow {
-        display: initial;
-    }
-}
-
-@media (min-width: 800px) {
-    .content-video {
-        min-width: 800px;
-        max-width: calc((100vh - 250px) * 4 / 3);
-    }
-}
-
-@media (max-width: 733px) {
-    form.helio-subscribe button,
-    form.helio-subscribe input {
-        width: 100%;
-        margin-left: 0;
-        display: block;
-    }
 }
