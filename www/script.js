@@ -19,6 +19,7 @@ $('form.helio-subscribe').submit(function (e) {
 window.setTimeout(function() {
  $('a[href^="mailto:"]').each(function() {
   this.href += 'helio.exchange';
+  this.text = this.text.replace('@', '@helio.exchange');
  });
 }, 500);
 
@@ -27,41 +28,3 @@ window.setTimeout(function() {
 $(document).ready(() => {
     $('body').removeClass('loading');
 });
-
-
-let videoN = document.getElementById("video-narrow");
-let btnN = document.getElementById("control-narrow");
-
-let videoW = document.getElementById("video-wide");
-let btnW = document.getElementById("control-wide");
-
-function narrowMute() {
-    if(!videoW || !videoN || !btnW || !btnN) {
-        return;
-    }
-
-    videoW.muted = true;
-    if (videoN.muted) {
-        videoN.muted = false;
-        btnN.innerHTML = '<i class="fas fa-volume-mute"></i> Mute';
-    } else {
-        videoN.muted = true;
-        btnN.innerHTML = '<i class="fas fa-volume-up"></i> Unmute';
-    }
-}
-
-
-function wideMute() {
-    if(!videoW || !videoN || !btnW || !btnN) {
-        return;
-    }
-
-    videoN.muted = true;
-    if (videoW.muted) {
-        videoW.muted = false;
-        btnW.innerHTML = '<i class="fas fa-volume-mute"></i> Mute';
-    } else {
-        videoW.muted = true;
-        btnW.innerHTML = '<i class="fas fa-volume-up"></i> Unmute';
-    }
-}
