@@ -12,7 +12,7 @@ jobs:
         - master
     steps:
       - checkout
-      - run: if [[ ! -e $(which rsync) ]]; then sudo apt-get install rsync; fi
+      - run: if [[ ! -e $(which rsync) ]]; then sudo apt-get update && sudo apt-get install rsync; fi
       - run:
           name: deploy
           command: |
