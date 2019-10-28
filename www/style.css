@@ -67,6 +67,10 @@ h2 {
 
 
 
+form.helio-subscribe {
+    max-width: 750px;
+}
+
 form.helio-subscribe .alert-success,
 form.helio-subscribe button,
 form.helio-subscribe input {
